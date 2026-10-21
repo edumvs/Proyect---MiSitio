@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
+header { background: #2b4c9b; color: #fff; padding: 24px; text-align: center; }
+main { max-width: 800px; margin: 24px auto; padding: 0 16px; }
+.card { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+a.btn { display: inline-block; background: #2b4c9b; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; margin-top: 8px; }
+a.btn:hover { background: #1d3677; }
+img { max-width: 100%; height: auto; }
+footer { text-align: center; padding: 16px; color: #666; font-size: 14px; }
