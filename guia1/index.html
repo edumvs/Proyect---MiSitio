@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guía 1</title>
-  <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía 1 - Programación Web</title>
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-  <header>
-    <img src="../img/logo.svg" alt="Logo" width="80">
-    <h1>Guía 1</h1>
-    <p>Tema 1</p>
-  </header>
-  <main>
-    <div class="card">
-      <h2>Contenido de la Guía 1</h2>
-      <p>Aquí va el desarrollo de tu guía 1.</p>
-    </div>
-    <a class="btn" href="../index.html">&larr; Volver a la Página Principal</a>
-  </main>
-  <footer>Mi sitio &copy; 2026</footer>
+    <header>
+        <h1>Guía 1: HTML Básico y Accesibilidad</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">⬅ Volver al Menú Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre mí</h2>
+            <p>Práctica inicial de estructuración de páginas web con marcado semántico y accesibilidad.</p>
+        </section>
+        <section>
+            <h2>Formulario de Registro</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre-g1">Nombre completo:</label><br>
+                    <input type="text" id="nombre-g1" name="nombre" required>
+                </div>
+                <div style="margin-top: 10px;">
+                    <label for="email-g1">Correo electrónico:</label><br>
+                    <input type="email" id="email-g1" name="email" required>
+                </div>
+                <div style="margin-top: 15px;">
+                    <button type="submit">Enviar datos</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Guía 1</p>
+    </footer>
 </body>
 </html>

@@ -1,9 +1,227 @@
-* { box-sizing: border-box; }
-body { font-family: Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
-header { background: #2b4c9b; color: #fff; padding: 24px; text-align: center; }
-main { max-width: 800px; margin: 24px auto; padding: 0 16px; }
-.card { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
-a.btn { display: inline-block; background: #2b4c9b; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; margin-top: 8px; }
-a.btn:hover { background: #1d3677; }
-img { max-width: 100%; height: auto; }
-footer { text-align: center; padding: 16px; color: #666; font-size: 14px; }
+/* ===== 1. Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --cafe: #5C3A00;       
+  --amarillo: #FDB913;   
+  --crema: #FFF8E7;     
+  --texto: #2B2118;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--texto);
+  background: var(--crema);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main, footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ===== 2. Tipografía y Tarjeta Menú ===== */
+h1, h2, h3 {
+  color: var(--cafe);
+  line-height: 1.2;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--cafe);
+  color: var(--crema);
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.precio {
+  display: inline-block;
+  background: var(--amarillo);
+  color: #161616;
+  font-weight: bold;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* ===== 3. Encabezado y menú ===== */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--cafe);
+  color: var(--crema);
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: var(--crema);
+  text-decoration: none;
+  border: 2px solid var(--crema);
+  border-radius: 999px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: var(--amarillo);
+  color: #161616;
+}
+
+/* ===== 4. Catálogo y Tarjetas ===== */
+.catalogo {
+  display: grid;
+  gap: 1rem;
+}
+
+.producto {
+  background: #FFFFFF;
+  border: 2px solid #E3DECF;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(92, 58, 0, 0.15);
+}
+
+.producto img {
+  border-radius: 8px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.producto.agotado {
+  opacity: 0.75;
+  border-style: dashed;
+  background: #F5F1E9;
+}
+
+/* ===== 5. Responsividad (mobile first) ===== */
+@media (min-width: 600px) {
+  .catalogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .catalogo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* ===== 6. Accesibilidad y Formulario ===== */
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid #161616;
+  outline-offset: 2px;
+}
+
+header a:focus-visible {
+  outline-color: var(--amarillo);
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 40rem;
+}
+
+fieldset {
+  display: grid;
+  gap: 0.5rem;
+  border: 2px solid #E3DECF;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  font: inherit;
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid var(--cafe);
+  border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  min-height: 44px;
+  background: var(--cafe);
+  color: var(--crema);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #422900;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

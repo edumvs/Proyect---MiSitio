@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos | Panadería Santa Rosa</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <p><strong>Panadería Santa Rosa</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="../index.html">⬅ Volver al Menú Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Haz tu pedido</h1>
+        <p>Te confirmaremos por WhatsApp en menos de una hora[cite: 1].</p>
+
+        <form action="#" method="post">
+            <div class="form-grid">
+                <fieldset>
+                    <legend>Tus datos[cite: 1]</legend>
+                    <label for="nombre">Nombre[cite: 1]</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="celular">Celular[cite: 1]</label>
+                    <input type="tel" id="celular" name="celular" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tu pedido[cite: 1]</legend>
+                    <label for="producto">Producto[cite: 1]</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">Elige un producto[cite: 1]</option>
+                        <option>Pan francés</option>
+                        <option>Pan de yema</option>
+                        <option>Chancay (Agotado)</option>
+                        <option>Torta de chocolate</option>
+                    </select>
+
+                    <label for="cantidad">Cantidad[cite: 1]</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+
+                    <label for="fecha">Fecha de recojo[cite: 1]</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="notas">Indicaciones (opcional)[cite: 1]</label>
+                    <textarea id="notas" name="notas" rows="3"></textarea>
+                </fieldset>
+            </div>
+
+            <div style="margin-top: 1rem;">
+                <input type="checkbox" id="consentimiento" name="consentimiento" required>
+                <label for="consentimiento">Autorizo que usen mis datos solo para atender este pedido[cite: 1].</label>
+            </div>
+
+            <button type="submit" style="margin-top: 1rem;">Enviar pedido[cite: 1]</button>
+        </form>
+    </main>
+
+    <footer id="contacto">
+        <h2>Visítanos</h2>
+        <address>
+            Av. Los Panaderos 123, Lima<br>
+            Celular: <a href="tel:+51900000000">900 000 000</a>[cite: 1]
+        </address>
+        <p>Lunes a sábado de 6:00 a 21:00 · Domingos de 6:00 a 13:00[cite: 1]</p>
+    </footer>
+</body>
+</html>

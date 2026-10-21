@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guía 2</title>
-  <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Santa Rosa | Guía 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-  <header>
-    <img src="../img/logo.svg" alt="Logo" width="80">
-    <h1>Guía 2</h1>
-    <p>Tema 2</p>
-  </header>
-  <main>
-    <div class="card">
-      <h2>Contenido de la Guía 2</h2>
-      <p>Aquí va el desarrollo de tu guía 2.</p>
-    </div>
-    <a class="btn" href="../index.html">&larr; Volver a la Página Principal</a>
-  </main>
-  <footer>Mi sitio &copy; 2026</footer>
+    <header>
+        <p><strong>Panadería Santa Rosa</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="../index.html">⬅ Volver al Menú Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Pan caliente desde 1987</h1>
+            <p>Somos una panadería familiar. Horneamos cada madrugada con recetas de tres generaciones.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros productos</h2>
+            <div class="catalogo">
+                <article class="producto">
+                    <img src="../img/pan-yema.jpg" alt="Canasta de panes de yema dorados recién horneados">
+                    <h3>Pan de yema</h3>
+                    <p><span class="precio">S/ 0.50</span> la unidad[cite: 1]</p>
+                </article>
+                <article class="producto">
+                    <h3>Pan francés</h3>
+                    <p><span class="precio">S/ 0.30</span> la unidad[cite: 1]</p>
+                </article>
+                <article class="producto agotado">
+                    <h3>Chancay</h3>
+                    <p><span class="precio">S/ 0.60</span> la unidad[cite: 1]</p>
+                    <p><strong>Estado:</strong> Agotado[cite: 1]</p>
+                </article>
+                <article class="producto">
+                    <img src="../img/tortas.jpg" alt="Torta de chocolate de dos pisos decorada con fresas[cite: 1]">
+                    <h3>Torta de chocolate</h3>
+                    <p><span class="precio">S/ 45.00</span> entera[cite: 1]</p>
+                </article>
+            </div>
+            <p style="margin-top: 1rem;"><strong>Pedidos de tortas con 24 horas de anticipación[cite: 1].</strong></p>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <h2>Visítanos</h2>
+        <address>
+            Av. Los Panaderos 123, Lima<br>
+            Celular: <a href="tel:+51900000000">900 000 000</a>[cite: 1]
+        </address>
+        <p>Lunes a sábado de 6:00 a 21:00 · Domingos de 6:00 a 13:00[cite: 1]</p>
+    </footer>
 </body>
 </html>
