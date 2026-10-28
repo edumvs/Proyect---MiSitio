@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Formularios</title>
+    <script>
+        function procesar(){
+        let n1 = parseInt(document.getElementById("txtN1").value)
+        let n2 = parseInt(document.getElementById("txtN2").value)
+            alert(n1 + n2)
+        }
+    </script>
+</head>
+<body>
+    <h1>SUMA DE DOS NUMEROS</h1>
+    <form action="" onsubmit="procesar()">
+        N1: <input type="text" name="txtN1" id="txtN1">
+        <br>N2: <input type="text" name="txtN2" id="txtN2">
+        <br><input type="reset" value="Limpiar"><input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

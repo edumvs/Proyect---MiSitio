@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Formularios</title>
+    <script>
+        function validar(){
+            let dni = document.getElementById("txtdni").value
+            if(dni.trim().length == 0)
+                alert("Error, el dni no puede estar vacio")
+        }
+    </script>
+</head>
+<body>
+    <h1>Validacion de Formulario</h1>
+    <form action="" onsubmit="validar()">
+        DNI: <input type="text" name="txtdni" id="txtdni">
+        <span id="errordni"></span>
+        <br><input type="reset" value="Limpiar"><input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

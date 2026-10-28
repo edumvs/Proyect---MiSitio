@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso JavaScript</title>
+  <script>
+    function saludar() {
+      let nombre = document.getElementById("txtnom").value;
+      let mensaje = "Hola " + nombre + ", bienvenido a la programación web";
+      document.getElementById("mensaje").innerHTML = mensaje;
+    }
+  </script>
+</head>
+<body>
+  <h1>Uso de JavaScript</h1>
+  <label for="">Escribir su nombre</label>
+  <input type="text" name="txtnom" id="txtnom" />
+  <button onclick="saludar()">saludar</button>
+  <p id="mensaje"></p>
+</body>
+</html>
