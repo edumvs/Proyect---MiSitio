@@ -1,0 +1,14 @@
+Análisis Ético - Semana 3: Introducción a JavaScript
+Integrantes: Vilchez Sayan Eduardo Manuel
+
+1. ¿Qué le responde Valeria al proveedor?
+Se rechaza la oferta del proveedor basándonos en la Ley N.° 29733 de Protección de Datos Personales. Se vulnera el Principio de Consentimiento y el Principio de Finalidad, ya que los datos de los clientes no pueden cederse a terceros para fines publicitarios sin una autorización explícita para ese fin.
+
+2. ¿Agregarías la fecha de nacimiento o la casilla de publicidad a tu formulario?
+No se debe agregar la fecha de nacimiento por proporcionalidad. La casilla de publicidad no debe venir marcada por defecto, ya que el consentimiento debe ser libre y consciente, nunca premarcado.
+
+3. Reescribe un mensaje de error de tu formulario para que lo entienda don Julio.
+Mensaje rediseñado para don Julio: "Don Julio, por favor ingrese su número celular completo de 9 números empezando con 9 (ejemplo: 987654321) para poder llamarle cuando su pedido esté listo."
+
+4. Si tu JavaScript ya valida todo, ¿por qué el servidor tendrá que volver a validar los datos?
+Porque la validación de JavaScript ocurre en el navegador del cliente y puede ser evitada o modificada. La validación en el servidor es obligatoria por seguridad e integridad de datos.
